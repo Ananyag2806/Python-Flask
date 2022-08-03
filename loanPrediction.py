@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn import svm
 from sklearn.metrics import accuracy_score
 
-df=pd.read_csv("/content/train_u6lujuX_CVtuZ9i.csv")
+df=pd.read_csv("content/train_u6lujuX_CVtuZ9i.csv")
 
 df.isnull().sum()
 
@@ -58,7 +58,7 @@ y_pred=villan.predict(X_test)
 
 print("accuracy of the model :",accuracy_score(Y_test,y_pred))
 
-mf=pd.read_csv('/content/test_Y3wMUE5_7gLdaTN.csv')
+mf=pd.read_csv('content/test_Y3wMUE5_7gLdaTN.csv')
 
 mf.isnull().sum()
 
