@@ -1,0 +1,11 @@
+.row{
+    display: flex;
+}
+.col{
+    display: block;
+}
+.dropdown {
+    display: block;
+    margin-bottom: 20px;
+    width: 50%;
+}

@@ -74,4 +74,5 @@ M = mf.drop(columns=['Loan_ID',],axis=1)
 
 mf["Loan_Status"]=flash.predict(M)
 
+
 mf.to_csv("Loan_Status.csv",header=True,index=False)
