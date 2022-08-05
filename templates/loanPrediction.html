@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h1>Loan Prediction Model</h1>
+    <h1 div class="head">Loan Prediction Model Using Machine Learning</h1>
 
     <form>
         <div class="row">
@@ -19,10 +19,11 @@
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Select Option
                     </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Male</a>
-                        <a class="dropdown-item" href="#">Female</a>
-                    </div>
+                    <select class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+
+                        <option value="Male">Male</option>
+                        <option value="Male">Female</option>
+                    </select>
                 </div>
             </div>
 
@@ -41,104 +42,138 @@
             </div>
         </div>
 
+        <div class="row">
+            <div class="col">
+                <label>Number of dependents</label>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select Option
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">0</a>
+                        <a class="dropdown-item" href="#">1</a>
+                        <a class="dropdown-item" href="#">2</a>
+                        <a class="dropdown-item" href="#">3</a>
+                        <a class="dropdown-item" href="#">4</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <label>Education</label>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select Option
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Graduated</a>
+                        <a class="dropdown-item" href="#">Ungraduated</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <label>Number of dependents</label>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Select Option
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">0</a>
-                <a class="dropdown-item" href="#">1</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
-                <a class="dropdown-item" href="#">4</a>
+        <div class="row">
+            <div class="col">
+                <label>Self Employed</label>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select Option
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">No</a>
+                        <a class="dropdown-item" href="#">Yes</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <label>Applicant Income</label>
+                <div class="input input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                        <span class="input-group-text">0.00</span>
+                    </div>
+                    <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
+                </div>
             </div>
         </div>
-        <label>Education</label>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Select Option
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Graduated</a>
-                <a class="dropdown-item" href="#">Ungraduated</a>
+
+        <div class="row">
+            <div class="col">
+                <label>Co Applicant Income</label>
+                <div class="input input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                        <span class="input-group-text">0.00</span>
+                    </div>
+                    <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
+                </div>
+            </div>
+
+            <div class="col">
+                <label>Loan Amount</label>
+                <div class="input input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">$</span>
+                        <span class="input-group-text">0.00</span>
+                    </div>
+                    <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
+                </div>
             </div>
         </div>
-        <label>Self Employed</label>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Select Option
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">No</a>
-                <a class="dropdown-item" href="#">Yes</a>
+
+        <div class="row">
+            <div class="col">
+                <label>Loan Amount Term</label>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select Option
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">60</a>
+                        <a class="dropdown-item" href="#">120</a>
+                        <a class="dropdown-item" href="#">180</a>
+                        <a class="dropdown-item" href="#">240</a>
+                        <a class="dropdown-item" href="#">300</a>
+                        <a class="dropdown-item" href="#">360</a>
+                        <a class="dropdown-item" href="#">480</a>
+                        <a class="dropdown-item" href="#">560</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <label>Credit History</label>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select Option
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">0</a>
+                        <a class="dropdown-item" href="#">1</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <label>Applicant Income</label>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text">$</span>
-                <span class="input-group-text">0.00</span>
-            </div>
-            <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
-        </div>
-        <label>Co Applicant Income</label>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text">$</span>
-                <span class="input-group-text">0.00</span>
-            </div>
-            <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
-        </div>
-        <label>Loan Amount</label>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text">$</span>
-                <span class="input-group-text">0.00</span>
-            </div>
-            <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)">
-        </div>
-        <label>Loan Amount Term</label>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Select Option
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">60</a>
-                <a class="dropdown-item" href="#">120</a>
-                <a class="dropdown-item" href="#">180</a>
-                <a class="dropdown-item" href="#">240</a>
-                <a class="dropdown-item" href="#">300</a>
-                <a class="dropdown-item" href="#">360</a>
-                <a class="dropdown-item" href="#">480</a>
-                <a class="dropdown-item" href="#">560</a>
-            </div>
-        </div>
-        <label>Credit History</label>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Select Option
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">0</a>
-                <a class="dropdown-item" href="#">1</a>
-            </div>
-        </div>
-        <label>Property Area</label>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Select Option
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Urban</a>
-                <a class="dropdown-item" href="#">Rural</a>
+
+        <div class="row">
+            <div class="col">
+                <label>Property Area</label>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select Option
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Urban</a>
+                        <a class="dropdown-item" href="#">Rural</a>
+                    </div>
+                </div>
             </div>
         </div>
     </form>
